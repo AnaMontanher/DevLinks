@@ -69,11 +69,11 @@ body * {
   z-index: 1;
   transform: translateY(-50%);
 
-  animation: slide-back .3s ;
+  animation: slide-back 0.3s;
 }
 
-#switch button:hover{
-outline: 8px solid var(--hightlight-color);
+#switch button:hover {
+  outline: 8px solid var(--hightlight-color);
 }
 
 #switch span {
@@ -86,7 +86,7 @@ outline: 8px solid var(--hightlight-color);
   backdrop-filter: blur(4px);
 }
 .light #switch button {
-animation: slide-in 0.4s forwards;
+  animation: slide-in 0.4s forwards;
 }
 
 /*listas*/
@@ -170,31 +170,31 @@ footer {
 
 /*Media queries*/
 
-@media (min-width: 700px){
+@media (min-width: 700px) {
   :root {
-    --bg-url: url(./assets/bg-desktop.jpg)
+    --bg-url: url(./assets/bg-desktop.jpg);
   }
- .light {
-      --bg-url: url(./assets/bg-desktop-light.jpg)
-    }
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
 }
 
 /*animations*/
-@keyframes slide-in{
-from{
-  left: 0;
-}
-to{
-  left: 50%;
-}
-}
-@keyframes slide-back{
-  from{
-    left: 50%;
-  }
-  to{
+@keyframes slide-in {
+  from {
     left: 0;
   }
+  to {
+    left: 50%;
   }
+}
+@keyframes slide-back {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
+  }
+}
 
-  /*test*/
+/*test*/
